@@ -1,0 +1,55 @@
+.nav-bar * {
+  box-sizing: border-box;
+}
+.nav-bar {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgb(73, 73, 73);
+  position: sticky;
+  top: 0;
+}
+.nav-item {
+  text-decoration: none;
+  color: white;
+  padding: 8px 10px;
+  transition: all 0.2s;
+  background-color: rgb(73, 73, 73);
+  font-size: large;
+  display: inline-block;
+}
+#login-btn {
+  border: 1px solid crimson;
+  border-radius: 3%;
+  padding: 5px 10px;
+  margin: 2px 2px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+#menu-btn {
+  display: none;
+  cursor: pointer;
+}
+.nav-item:hover {
+  background-color: crimson;
+}
+.active {
+  background-color: crimson;
+}
+.links {
+  display: block;
+}
+@media screen and (max-width: 720px) {
+  .nav-bar {
+    flex-direction: column;
+  }
+  #menu-btn {
+    display: inline-block;
+  }
+  .mobile-none {
+    display: none;
+  }
+  .links > a {
+    display: block;
+  }
+}
